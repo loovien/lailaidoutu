@@ -37,6 +37,17 @@ spring:
       hibernate:
         enable_lazy_load_no_trans: true
     show-sql: true
+logging:
+  level:
+    org:
+      springframework:
+        web: info
+
+    com:
+       sexymmei: info
+
+
+
 
 
 

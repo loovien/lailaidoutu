@@ -3,6 +3,8 @@ package com.sexymmei.configs;
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.support.http.StatViewServlet;
 import com.alibaba.druid.support.http.WebStatFilter;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
@@ -15,6 +17,8 @@ import java.sql.SQLException;
 
 @Configuration
 public class DruidConfiguration {
+
+    private final static Logger logger = LoggerFactory.getLogger(DruidConfiguration.class);
 
     @Value("${spring.datasource.url}")
     private String dbUrl;

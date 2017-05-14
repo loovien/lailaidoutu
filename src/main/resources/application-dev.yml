@@ -1,3 +1,8 @@
 server:
   port: 8080
   context-path: /
+
+
+logging:
+  level: debug
+
