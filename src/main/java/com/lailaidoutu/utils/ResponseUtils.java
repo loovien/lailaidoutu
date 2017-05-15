@@ -1,9 +1,8 @@
-package com.sexymmei.utils;
+package com.lailaidoutu.utils;
 
-import com.sexymmei.constants.AppCodeEnum;
-import com.sexymmei.dto.Result;
+import com.lailaidoutu.constants.AppCodeEnum;
+import com.lailaidoutu.dto.Result;
 import org.springframework.validation.BindingResult;
-import org.springframework.validation.ObjectError;
 
 /**
  * Created by luowen on 2017/5/14.

@@ -1,6 +1,6 @@
-package com.sexymmei.controllers.web;
+package com.lailaidoutu.controllers.web;
 
-import com.sexymmei.controllers.AppAbstractController;
+import com.lailaidoutu.controllers.AppAbstractController;
 
 /**
  * Created by luowen on 2017/5/14.

@@ -1,4 +1,4 @@
-package com.sexymmei.constants;
+package com.lailaidoutu.constants;
 
 /**
  * Created by luowen on 2017/5/14.

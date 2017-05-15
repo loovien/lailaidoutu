@@ -1,4 +1,4 @@
-package com.sexymmei.dto;
+package com.lailaidoutu.dto;
 
 /**
  * Created by luowen on 2017/5/14.

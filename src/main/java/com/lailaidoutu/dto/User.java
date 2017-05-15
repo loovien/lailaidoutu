@@ -1,4 +1,4 @@
-package com.sexymmei.dto;
+package com.lailaidoutu.dto;
 
 import javax.validation.constraints.Max;
 
@@ -59,7 +59,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "UserEntity{" +
                 "username='" + username + '\'' +
                 ", avatar='" + avatar + '\'' +
                 ", level=" + level +

@@ -1,9 +1,9 @@
-package com.sexymmei.controllers.android;
+package com.lailaidoutu.controllers.android;
 
-import com.sexymmei.constants.AppCodeEnum;
-import com.sexymmei.dto.Result;
-import com.sexymmei.dto.User;
-import com.sexymmei.utils.ResponseUtils;
+import com.lailaidoutu.constants.AppCodeEnum;
+import com.lailaidoutu.dto.Result;
+import com.lailaidoutu.dto.User;
+import com.lailaidoutu.utils.ResponseUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.validation.BindingResult;
@@ -24,7 +24,7 @@ public class LoginController extends AndroidController{
     public Result<User> login(@Valid User user, BindingResult bindingResult)
     {
         if (bindingResult.hasErrors()) {
-            logger.info("User entity {}", user);
+            logger.info("UserEntity entity {}", user);
             return ResponseUtils.validateError(AppCodeEnum.VALIDATE_ERROR, bindingResult);
         }
         return ResponseUtils.success();

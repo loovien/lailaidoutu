@@ -1,6 +1,6 @@
-package com.sexymmei.controllers.android;
+package com.lailaidoutu.controllers.android;
 
-import com.sexymmei.controllers.AppAbstractController;
+import com.lailaidoutu.controllers.AppAbstractController;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
