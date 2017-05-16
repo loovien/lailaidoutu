@@ -7,15 +7,23 @@ import java.util.Date;
  * Created by luowen on 2017/5/15.
  */
 @Entity
-@Table(name = "user")
+@Table(name = "user", indexes = {
+        @Index(name = "idx_name", columnList = ("name")),
+        @Index(name = "idx_email", columnList = "email"),
+        @Index(name = "idx_mobile", columnList = "mobile"),
+        @Index(name = "idx_coins", columnList = "coins"),
+        @Index(name = "idx_created_at", columnList = "createdAt")
+})
 public class UserEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    @Column(nullable = false, columnDefinition = "varchar(64) default '' comment '用户昵称'")
     private String name;
 
+    @Column(nullable = false, columnDefinition = "varchar(255) default '' comment '用户头像'")
     private String avatar;
 
     private Integer gender;
